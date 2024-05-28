@@ -46,6 +46,10 @@ module Zerobounce
       Request.new(params).validate(params)
     end
 
+    def score(params)
+      Response.new(params).score(params)
+    end
+
     # Get the number of remaining credits on the account.
     #
     # @param [Hash] params
