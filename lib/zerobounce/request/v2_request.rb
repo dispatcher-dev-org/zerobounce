@@ -18,6 +18,10 @@ module Zerobounce
         Response.new(get('validate', params), self)
       end
 
+      def score(params)
+        Response.new(get('scoring', params), self)
+      end
+
       private
 
       # @param [Hash] params
